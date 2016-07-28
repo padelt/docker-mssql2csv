@@ -1,0 +1,11 @@
+Put your query in `query.sql`.
+```
+docker build -t pymssql . 
+docker run \
+  -e SERVER=servername.domain \
+  -e USER=username \
+  -e PASSWORD=secretpassword \
+  -e DATABASE=databasename \
+  -it pymssql
+```
+Read the output.
